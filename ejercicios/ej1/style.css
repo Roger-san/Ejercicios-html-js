@@ -1,0 +1,9 @@
+#box {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  border: solid black 2px;
+}
+#button {
+  margin: 1rem 45%;
+}

@@ -1,0 +1,13 @@
+.reset, .nav-side, body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.nav-side {
+  display: inline-block;
+  width: auto;
+  background-color: aquamarine;
+}
+
+/*# sourceMappingURL=/Ejercicio%20framework.e31bb0bc.css.map */

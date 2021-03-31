@@ -1,0 +1,28 @@
+
+body{
+margin: 0px;
+padding: 0px;
+border: 0px;
+}
+h3{
+    font-size: 2rem;
+    text-decoration: underline;
+}
+.verde{
+    color: green;
+}
+.tahoma{
+    font-family: tahoma;
+}
+img{
+    border: solid blue 2px;
+    width: 200px;
+    height: 200px;
+}
+hr{
+
+    width: 100%;
+}
+.cen{
+    text-align: center;
+}

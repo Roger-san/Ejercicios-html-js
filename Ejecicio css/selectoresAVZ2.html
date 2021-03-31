@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Ejemplo de selectores avanzados</title>
+    <style>
+        table,
+        td,
+        th,
+        tr {
+            border: black solid 1px;
+        }
+
+        /* tr:nth-child(2) td{
+    background-color: lemonchiffon;
+}
+tr:nth-child(4) td{
+    background-color: lemonchiffon;
+} */
+        tr:nth-of-type(even) td {
+            background-color: lemonchiffon;
+
+        }
+
+        tr:hover td {
+            background-color: #FFFF66;
+        }
+
+        tr:nth-child(1) {
+            background-color: gainsboro;
+        }
+
+        .euro {
+            background-color: lightblue;
+            background-image: url(iconmonstr-coin-2.svg);
+            background-size: 13px;
+            background-repeat: no-repeat;
+            background-position: center left;
+            background-position-x: 2px;
+            padding-left: 15px;
+        }
+
+        .dolar {
+            background-color: lightblue;
+            background-image: url(iconfinder_finance-27_808657.svg);
+            background-size: 13px;
+            background-repeat: no-repeat;
+            background-position: center left;
+            background-position-x: 2px;
+            padding-left: 15px;
+        }
+
+        .libra {
+            background-color: lightblue;
+            background-image: url(iconfinder_Pound_1737366.svg);
+            background-size: 18px;
+            background-repeat: no-repeat;
+            background-position: center left;
+            padding-left: 15px;
+        }
+
+        .yen {
+            background-color: lightblue;
+            background-image: url(iconfinder_Euro_1737377.svg);
+            background-size: 18px;
+            background-repeat: no-repeat;
+            background-position: center left;
+            padding-left: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Cambio</th>
+            <th>Compra</th>
+            <th>Venta</th>
+            <th>Máximo</th>
+            <th>Mínimo</th>
+        </tr>
+        <tr>
+            <th class="euro">Euro/Dolar</th>
+            <td>1.25</td>
+            <td>1.25</td>
+            <td>1.25</td>
+            <td>1.24</td>
+        </tr>
+        <tr>
+            <th class="dolar">Dolar/Yen</th>
+            <td>119.01</td>
+            <td>119.05</td>
+            <td>119.82</td>
+            <td>119.82</td>
+        </tr>
+        <tr>
+            <th class="libra">Libra/Dolar</th>
+            <td>1.86</td>
+            <td>1.86</td>
+            <td>1.86</td>
+            <td>1.85</td>
+        </tr>
+        <tr>
+            <th class="yen">Yen/Euro</th>
+            <td>0.67</td>
+            <td>0.67</td>
+            <td>0.66</td>
+            <td>0.67</td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="http://example.com" method="get">
+        <fieldset>
+            <legend> caja de checkboxes</legend>
+            <ul>
+                <li>
+                    <input type="radio" checked name="check1" value="patatas">
+                    <label for="check1">checkbox patatas</label>
+                </li>
+                <li>
+                    <input type="radio" name="check2" value="esparragos">
+                    <label for="check2">checkbox esparragos</label>
+                </li>
+                <li>
+                    <input type="radio" name="check3" value="queso">
+                    <label for="check3">checkbox queso</label>
+                </li>
+                <li>
+                    <input type="radio" name="check4" value="frijoles">
+                    <label for="check4">checkbox frijoles</label>
+                </li>
+            </ul>
+
+
+        </fieldset>
+
+        <input type="file" name="files" id="files" accept="image/" >
+
+        <label for="beans">How many beans can you eat?</label>
+
+        <input type="range" name="beans" id="beans" min="0" max="500" step="10" />
+        <output class="beancount"></output>
+        <button type="submit">holaaa</button>
+    </form>
+</body>
+<script>
+    const beans = document.querySelector("#beans");
+    const count = document.querySelector(".beancount");
+    count.textContent = beans.value;
+    beans.oninput = () => {
+        count.textContent = beans.value;
+    };
+</script>
+
+</html>
